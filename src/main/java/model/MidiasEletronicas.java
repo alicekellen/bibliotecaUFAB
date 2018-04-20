@@ -1,36 +1,59 @@
 package model;
 
-public class MidiasEletronicas {
+import interfaces.ICadastrarAcervo;
 
-	private static int titulo;
-	private static int tipo; //pode ser cd ou dvd
-	private static int datadegravacao;
+public class MidiasEletronicas implements ICadastrarAcervo{
+
+	/**
+	 * Declaração de variaveis
+	 *
+	 */
+	private int titulo;
+	private int tipo; //pode ser cd ou dvd
+	private int datadegravacao;
 	
+	/**
+	 * Construtor
+	 *
+	 */
 	public MidiasEletronicas() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static int getTitulo() {
+	/**
+	 * Métodos get e set
+	 *
+	 */
+	public int getTitulo() {
 		return titulo;
 	}
 
-	public static void setTitulo(int titulo) {
-		MidiasEletronicas.titulo = titulo;
+	public void setTitulo(int titulo) {
+		this.titulo = titulo;
 	}
 
-	public static int getTipo() {
+	public int getTipo() {
 		return tipo;
 	}
 
-	public static void setTipo(int tipo) {
-		MidiasEletronicas.tipo = tipo;
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 
-	public static int getDatadegravacao() {
+	public int getDatadegravacao() {
 		return datadegravacao;
 	}
 
-	public static void setDatadegravacao(int datadegravacao) {
-		MidiasEletronicas.datadegravacao = datadegravacao;
+	public void setDatadegravacao(int datadegravacao) {
+		this.datadegravacao = datadegravacao;
+	}
+
+	/**
+	 * Método responsável por cadastrar Midias Digitais
+	 *
+	 */
+	public void cadastrar() {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -1,54 +1,77 @@
 package model;
 
-public class Revista {
-	
-	private static int titulo;
-	private static int editora;
-	private static int datapublicacao;
-	private static int edicao;
-	private static int numpags;
+import interfaces.ICadastrarAcervo;
 
+public class Revista implements ICadastrarAcervo{
+	
+	/**
+	 * Declaração de variaveis
+	 *
+	 */
+	private int titulo;
+	private int editora;
+	private int datapublicacao;
+	private int edicao;
+	private int numpags;
+
+	/**
+	 * Construtor
+	 *
+	 */
 	public Revista() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static int getTitulo() {
+	/**
+	 * Métodos get e set
+	 *
+	 */
+	public int getTitulo() {
 		return titulo;
 	}
 
-	public static void setTitulo(int titulo) {
-		Revista.titulo = titulo;
+	public void setTitulo(int titulo) {
+		this.titulo = titulo;
 	}
 
-	public static int getEditora() {
+	public int getEditora() {
 		return editora;
 	}
 
-	public static void setEditora(int editora) {
-		Revista.editora = editora;
+	public void setEditora(int editora) {
+		this.editora = editora;
 	}
 
-	public static int getDatapublicacao() {
+	public int getDatapublicacao() {
 		return datapublicacao;
 	}
 
-	public static void setDatapublicacao(int datapublicacao) {
-		Revista.datapublicacao = datapublicacao;
+	public void setDatapublicacao(int datapublicacao) {
+		this.datapublicacao = datapublicacao;
 	}
 
-	public static int getEdicao() {
+	public int getEdicao() {
 		return edicao;
 	}
 
-	public static void setEdicao(int edicao) {
-		Revista.edicao = edicao;
+	public void setEdicao(int edicao) {
+		this.edicao = edicao;
 	}
 
-	public static int getNumpags() {
+	public int getNumpags() {
 		return numpags;
 	}
 
-	public static void setNumpags(int numpags) {
-		Revista.numpags = numpags;
+	public void setNumpags(int numpags) {
+		this.numpags = numpags;
+	}
+
+	/**
+	 * Método resonsável por cadastrar uma Revista
+	 *
+	 */
+	public void cadastrar() {
+		// TODO Auto-generated method stub
+		
 	}
 }

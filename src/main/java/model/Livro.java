@@ -1,84 +1,107 @@
 package model;
 
-public class Livro {
+import interfaces.ICadastrarAcervo;
 
-	private static int isbn;
-	private static String titulo;
-	private static String autor; //poder ser +1
-	private static String editora;
-	private static String anopublicacao;
-	private static String edicao;
-	private static int numpags;
-	private static String area;
-	private static String tema;
+public class Livro implements ICadastrarAcervo{
+
+	/**
+	 * Declaração de variaveis
+	 *
+	 */
+	private int isbn;
+	private String titulo;
+	private String autor; //poder ser +1
+	private String editora;
+	private String anopublicacao;
+	private String edicao;
+	private int numpags;
+	private String area;
+	private String tema;
 	
+	/**
+	 * Construtor
+	 *
+	 */
 	public Livro() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public static int getISBN() {
+	/**
+	 * Métodos get e set
+	 *
+	 */
+	public int getISBN() {
 		return isbn;
 	}
 	public void setISBN(int ISBN) {
-		Livro.isbn = ISBN;
+		this.isbn = ISBN;
 	}
-	public static String getTitulo() {
+	public String getTitulo() {
 		return titulo;
 	}
 	public void setTitulo(String titulo) {
-		Livro.titulo = titulo;
+		this.titulo = titulo;
 	}
-	public static String getAutor() {
+	public String getAutor() {
 		return autor;
 	}
 	public void setAutor(String autor) {
-		Livro.autor = autor;
+		this.autor = autor;
 	}
-	public static String getEditora() {
+	public String getEditora() {
 		return editora;
 	}
 
-	public static void setEditora(String editora) {
-		Livro.editora = editora;
+	public void setEditora(String editora) {
+		this.editora = editora;
 	}
 
-	public static String getAnopublicacao() {
+	public String getAnopublicacao() {
 		return anopublicacao;
 	}
 
-	public static void setAnopublicacao(String anopublicacao) {
-		Livro.anopublicacao = anopublicacao;
+	public void setAnopublicacao(String anopublicacao) {
+		this.anopublicacao = anopublicacao;
 	}
 
-	public static String getEdicao() {
+	public String getEdicao() {
 		return edicao;
 	}
 
-	public static void setEdicao(String edicao) {
-		Livro.edicao = edicao;
+	public void setEdicao(String edicao) {
+		this.edicao = edicao;
 	}
 
-	public static int getNumpags() {
+	public int getNumpags() {
 		return numpags;
 	}
 
-	public static void setNumpags(int numpags) {
-		Livro.numpags = numpags;
+	public void setNumpags(int numpags) {
+		this.numpags = numpags;
 	}
 
-	public static String getArea() {
+	public String getArea() {
 		return area;
 	}
 
-	public static void setArea(String area) {
-		Livro.area = area;
+	public void setArea(String area) {
+		this.area = area;
 	}
 
-	public static String getTema() {
+	public String getTema() {
 		return tema;
 	}
 
-	public static void setTema(String tema) {
-		Livro.tema = tema;
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
+
+	/**
+	 * Método que realiza o cadastro de um Livro
+	 *
+	 */
+	public void cadastrar() {
+		// TODO Auto-generated method stub
+		
 	}
 }

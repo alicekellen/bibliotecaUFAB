@@ -4,16 +4,28 @@ import java.util.ArrayList;
 
 public class Biblioteca {
 	
+	/**
+	 * Declaração de variáveis
+	 *
+	 */
 	private static String nome;
 	private static ArrayList<Aluno> alunos;
 	private static ArrayList<Livro> livros;
 	private static ArrayList<Ficha> fichas;
 	private static ArrayList<Funcionario> funcionarios;
 
+	/**
+	 * Construtor
+	 *
+	 */
 	public Biblioteca() {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * Métodos get e set
+	 *
+	 */
 	public static String getNome() {
 		return nome;
 	}

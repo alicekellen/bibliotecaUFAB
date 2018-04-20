@@ -1,63 +1,86 @@
 package model;
 
-public class TrabalhoConclusao {
-	
-	private static int titulo;
-	private static int autor; //es
-	private static int oreintador; //es
-	private static int tipo; //pode ser monografia, tese ou dissertacao
-	private static int anodedefesa;
-	private static int local;
+import interfaces.ICadastrarAcervo;
 
+public class TrabalhoConclusao implements ICadastrarAcervo{
+	
+	/**
+	 * Declaração de variaveis
+	 *
+	 */
+	private int titulo;
+	private int autor; //es
+	private int oreintador; //es
+	private int tipo; //pode ser monografia, tese ou dissertacao
+	private int anodedefesa;
+	private int local;
+
+	/**
+	 * Construtor
+	 *
+	 */
 	public TrabalhoConclusao() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static int getTitulo() {
+	/**
+	 * Métodos get e set
+	 *
+	 */
+	public int getTitulo() {
 		return titulo;
 	}
 
-	public static void setTitulo(int titulo) {
-		TrabalhoConclusao.titulo = titulo;
+	public void setTitulo(int titulo) {
+		this.titulo = titulo;
 	}
 
-	public static int getAutor() {
+	public int getAutor() {
 		return autor;
 	}
 
-	public static void setAutor(int autor) {
-		TrabalhoConclusao.autor = autor;
+	public void setAutor(int autor) {
+		this.autor = autor;
 	}
 
-	public static int getOreintador() {
+	public int getOreintador() {
 		return oreintador;
 	}
 
-	public static void setOreintador(int oreintador) {
-		TrabalhoConclusao.oreintador = oreintador;
+	public void setOreintador(int oreintador) {
+		this.oreintador = oreintador;
 	}
 
-	public static int getTipo() {
+	public int getTipo() {
 		return tipo;
 	}
 
-	public static void setTipo(int tipo) {
-		TrabalhoConclusao.tipo = tipo;
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 
-	public static int getAnodedefesa() {
+	public int getAnodedefesa() {
 		return anodedefesa;
 	}
 
-	public static void setAnodedefesa(int anodedefesa) {
-		TrabalhoConclusao.anodedefesa = anodedefesa;
+	public void setAnodedefesa(int anodedefesa) {
+		this.anodedefesa = anodedefesa;
 	}
 
-	public static int getLocal() {
+	public int getLocal() {
 		return local;
 	}
 
-	public static void setLocal(int local) {
-		TrabalhoConclusao.local = local;
+	public void setLocal(int local) {
+		this.local = local;
+	}
+
+	/**
+	 * Método responsável por cadastrar um Local
+	 *
+	 */
+	public void cadastrar() {
+		// TODO Auto-generated method stub
+		
 	}
 }

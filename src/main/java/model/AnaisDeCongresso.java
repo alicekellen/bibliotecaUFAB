@@ -1,63 +1,86 @@
 package model;
 
-public class AnaisDeCongresso {
-	
-	private static int tipo; //pode ser artigo, pôster ou resumo 
-	private static int titulo;
-	private static int autor; //pode ser +1
-	private static int nomedocongresso;
-	private static int anodepublicacao;
-	private static int local;
+import interfaces.ICadastrarAcervo;
 
+public class AnaisDeCongresso implements ICadastrarAcervo{
+	
+	/**
+	 * Declração das variáveis
+	 *
+	 */
+	private int tipo; //pode ser artigo, pôster ou resumo 
+	private int titulo;
+	private int autor; //pode ser +1
+	private int nomedocongresso;
+	private int anodepublicacao;
+	private int local;
+
+	/**
+	 * Construtor
+	 *
+	 */
 	public AnaisDeCongresso() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static int getTipo() {
+	/**
+	 * Métodos get e set
+	 *
+	 */
+	public int getTipo() {
 		return tipo;
 	}
 
-	public static void setTipo(int tipo) {
-		AnaisDeCongresso.tipo = tipo;
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 
-	public static int getTitulo() {
+	public int getTitulo() {
 		return titulo;
 	}
 
-	public static void setTitulo(int titulo) {
-		AnaisDeCongresso.titulo = titulo;
+	public void setTitulo(int titulo) {
+		this.titulo = titulo;
 	}
 
-	public static int getAutor() {
+	public int getAutor() {
 		return autor;
 	}
 
-	public static void setAutor(int autor) {
-		AnaisDeCongresso.autor = autor;
+	public void setAutor(int autor) {
+		this.autor = autor;
 	}
 
-	public static int getNomedocongresso() {
+	public int getNomedocongresso() {
 		return nomedocongresso;
 	}
 
-	public static void setNomedocongresso(int nomedocongresso) {
-		AnaisDeCongresso.nomedocongresso = nomedocongresso;
+	public void setNomedocongresso(int nomedocongresso) {
+		this.nomedocongresso = nomedocongresso;
 	}
 
-	public static int getAnodepublicacao() {
+	public int getAnodepublicacao() {
 		return anodepublicacao;
 	}
 
-	public static void setAnodepublicacao(int anodepublicacao) {
-		AnaisDeCongresso.anodepublicacao = anodepublicacao;
+	public void setAnodepublicacao(int anodepublicacao) {
+		this.anodepublicacao = anodepublicacao;
 	}
 
-	public static int getLocal() {
+	public int getLocal() {
 		return local;
 	}
 
-	public static void setLocal(int local) {
-		AnaisDeCongresso.local = local;
+	public void setLocal(int local) {
+		this.local = local;
+	}
+
+	/**
+	 * Método responsável por cadastrar Anis de Congresso
+	 *
+	 */
+	public void cadastrar() {
+		// TODO Auto-generated method stub
+		
 	}
 }

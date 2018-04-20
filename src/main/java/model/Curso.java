@@ -1,35 +1,27 @@
 package model;
 
-public class Funcionario {
+public class Curso{
 
 	/**
 	 * Declaração de variaveis
 	 *
 	 */
-	private int id;
 	private String nome;
+	private String area;
 	private String tipo;
 	
 	/**
 	 * Construtor
 	 *
 	 */
-	public Funcionario() {
-		// TODO Auto-generated constructor stub
+	public Curso() {
+		
 	}
-	
+
 	/**
 	 * Métodos get e set
 	 *
 	 */
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
 	public String getNome() {
 		return nome;
 	}
@@ -38,19 +30,27 @@ public class Funcionario {
 		this.nome = nome;
 	}
 
+	public String getArea() {
+		return area;
+	}
+
+	public void setArea(String area) {
+		this.area = area;
+	}
+
 	public String getTipo() {
 		return tipo;
 	}
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
-	}
+	} 
 	
 	/**
-	 * Método respondável por cadastrar um Funcionário
+	 * Método responsável por criar um curso
 	 *
 	 */
-	public void cadastrarFuncionario() {
+	public void cadastrarCurso() {
 		
 	}
 }
